@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:textAlignment="center"
+    tools:context=".dashboard">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="371dp"
+        android:layout_height="51dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/_124209_menu_icon"
+        app:title="E - Beat App"
+        app:titleMarginStart="40dp"
+        tools:ignore="MissingConstraints"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg1"
+              android:layout_width="match_parent"
+              android:layout_height="97dp"
+              app:srcCompat="@drawable/policeman_color_icon_police_officer_isolated_illustration_vector" />
+
+          <TextView
+              android:id="@+id/text1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg1"
+              android:layout_centerInParent="true"
+              android:text="@string/beat_officer_details"
+              android:textStyle="bold" />
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+
+          <ImageView
+              android:id="@+id/dimg2"
+              android:layout_width="match_parent"
+              android:layout_height="97dp"
+              app:srcCompat="@drawable/government"/>
+
+          <TextView
+              android:id="@+id/text2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg2"
+              android:layout_centerInParent="true"
+              android:text="@string/government_offices"
+              android:textStyle="bold" />
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+
+          <ImageView
+              android:id="@+id/dimg3"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/college"
+               />
+
+          <TextView
+              android:id="@+id/text3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg3"
+              android:layout_centerInParent="true"
+              android:text="@string/educational_ninstitutions"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+
+          <ImageView
+              android:id="@+id/dimg4"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/many_faiths" />
+
+          <TextView
+              android:id="@+id/text4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg4"
+              android:layout_centerInParent="true"
+              android:text="@string/places_of_nworship"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg5"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              app:srcCompat="@drawable/hotel" />
+
+          <TextView
+              android:id="@+id/textView6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg5"
+              android:layout_centerInParent="true"
+              android:text="@string/guest_house_hotels_restaurants"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg6"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/set_passenger_transport_vector_icons_train_metro_bus_trol_train_metro_tram_bus_trolleybus_taxi_set_passenger_transport_107608194" />
+
+          <ImageView
+              android:id="@+id/dimg6.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/pngtree_vector_fuel_station_icon_png_image_4015172" />
+
+          <TextView
+              android:id="@+id/text6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg6"
+              android:layout_centerInParent="true"
+              android:text="@string/bus_stop_taxi_stand_petrol_pump"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg7"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/gadas"
+              />
+
+          <TextView
+              android:id="@+id/text7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg7"
+              android:layout_centerInParent="true"
+              android:text="@string/gadas_and_movable_carts"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg8"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/closedhouses" />
+
+          <ImageView
+              android:id="@+id/dimg8.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/closedhouse" />
+
+          <TextView
+              android:id="@+id/text8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg8"
+              android:layout_centerInParent="true"
+              android:text="@string/closed_houses_in_the_beat"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card4"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg9"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/bank"/>
+
+          <TextView
+              android:id="@+id/text9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg9"
+              android:layout_centerInParent="true"
+              android:text="@string/house_panchayat_school_bank_visit"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg10"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/municipality"/>
+
+          <TextView
+              android:id="@+id/text10"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg10"
+              android:layout_centerInParent="true"
+              android:text="@string/village_panchayat_municipality_list_of_spa_hair_cutting_saloon"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card6"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card5"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg11"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/cameraone" />
+
+          <ImageView
+              android:id="@+id/dimg11.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/cameratwo" />
+
+          <TextView
+              android:id="@+id/text11"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg11"
+              android:layout_centerInParent="true"
+              android:text="@string/location_of_cctv_cameras"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg12"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/scrapyard"/>
+
+          <TextView
+              android:id="@+id/text12"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg12"
+              android:layout_centerInParent="true"
+              android:text="@string/scrap_yard_in_the_beat_date_of_checking"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/card7"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card6"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg13"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/restaurantone" />
+
+          <ImageView
+              android:id="@+id/dimg13.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/restauranttwo" />
+
+          <TextView
+              android:id="@+id/text13"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg13"
+              android:layout_centerInParent="true"
+              android:text="@string/important_restaurants"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg14"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/dancingicon"/>
+
+          <TextView
+              android:id="@+id/text14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg14"
+              android:layout_centerInParent="true"
+              android:text="@string/list_of_dancing_schools"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card8"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card7"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg15"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/touristguideone" />
+
+          <ImageView
+              android:id="@+id/dimg15.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/touristguidetwo" />
+
+          <TextView
+              android:id="@+id/text15"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg15"
+              android:layout_centerInParent="true"
+              android:text="@string/tourist_guides"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg16"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/criminalone" />
+
+          <ImageView
+              android:id="@+id/dimg16.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/criminaltwo" />
+
+          <TextView
+              android:id="@+id/text16"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg16"
+              android:layout_centerInParent="true"
+              android:text="@string/list_of_criminals"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card9"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card8"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg17"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/firregistered"/>
+
+          <TextView
+              android:id="@+id/text17"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg17"
+              android:layout_centerInParent="true"
+              android:text="@string/list_of_firs_registered"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg18"
+              android:layout_width="78dp"
+              android:layout_height="81dp"
+              app:srcCompat="@drawable/explosives" />
+
+          <ImageView
+              android:id="@+id/dimg18.1"
+              android:layout_width="69dp"
+              android:layout_height="81dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="0dp"
+              app:srcCompat="@drawable/explosivestwo" />
+
+          <TextView
+              android:id="@+id/text18"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg18"
+              android:layout_centerInParent="true"
+              android:text="@string/shop_under_exercise_law_explosives"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card10"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card9"
+        app:layout_constraintVertical_bias="0.0">
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr19"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg19"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/badcharacter"/>
+
+          <TextView
+              android:id="@+id/text19"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg19"
+              android:layout_centerInParent="true"
+              android:text="@string/list_of_bad_characters"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="10dp"
+          android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/sr20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+          <ImageView
+              android:id="@+id/dimg20"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              app:srcCompat="@drawable/negotiationicon"/>
+
+          <TextView
+              android:id="@+id/text20"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignWithParentIfMissing="false"
+              android:layout_below="@id/dimg20"
+              android:layout_centerInParent="true"
+              android:text="@string/people_useful_for_negotiation_kidnapping_hijacking"
+              android:textAlignment="center"
+              android:textStyle="bold" />
+
+        </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
